@@ -35,6 +35,8 @@ for itm in arraycode:
         compiledlines.append("</html>")
     elif base == "init":
         compiledlines.append("<head>")
+    elif base == "initlua":
+        compiledlines.append("<script src=\"https://dumo.is-a.dev/lua.vm.js\"></script>")
     elif base == "endinit":
         compiledlines.append("</head>")
     elif base == "body":
@@ -43,8 +45,10 @@ for itm in arraycode:
         compiledlines.append("</body>")
     elif base == "javascript":
         compiledlines.append("<script>")
-    elif base == "endjavascript":
+    elif base == "endjavascript" or base == "endlua":
         compiledlines.append("</script>")
+    elif base == "lua":
+        compiledlines.append("<script type=\"text/lua\">")
     elif base == "div":
         compiledlines.append("<div>")
     elif base == "enddiv":
