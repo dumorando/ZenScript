@@ -1,4 +1,5 @@
 # ZenScript
+# This project has been discontinued.
 A "programming language" that compiles to HTML  
 Heres some syntax  
 ```
